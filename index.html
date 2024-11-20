@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문서 제목</title>
+    <title>UDTT Studio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta property="og:site_name" content="UDTT Studio">
+    <meta name="description" content="UDTT Studio의 설명 페이지">
+    <link rel="stylesheet" href="https://churitoring.github.io/style.css">
+    <style>
+    @font-face {
+        font-family: 'Hahmlet-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+    @font-face {
+        font-family: 'Cafe24ClassicType-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/Cafe24ClassicType-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        }
+        body {
+            font-family: 'Hahmlet-Regular', sans-serif;
+        }
+        h1 {
+            font-family: 'Cafe24ClassicType-Regular', sans-serif;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px white, 0 0 30px #FF69B4, 0 0 40px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 20px white, 0 0 30px #FFD700, 0 0 40px #FF69B4, 0 0 50px white, 0 0 60px #FF0000;
+            }
+        }
+        h2 {
+            font-family: 'Cafe24ClassicType-Regular', sans-serif;
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #FFD700, 0 0 20px white, 0 0 30px #FF69B4, 0 0 40px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 20px white, 0 0 30px #FFD700, 0 0 40px #FF69B4, 0 0 50px white, 0 0 60px #FF0000;
+            }
+        }
+        .overlay {
+            position: absolute;
+            top: 0; /* 상단에 맞춤 */
+            left: 50%; /* 좌측에서부터 50% 위치에 배치 */
+            transform: translateX(-50%); /* 좌우 중앙에 위치하도록 조정 */
+            width: 90%; /* 폭을 80%로 설정 */
+            min-height: 100%; /* 높이를 화면의 높이와 동일하게 설정 */
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 15%, rgba(255, 255, 255, 0.9) 85%, rgba(255, 255, 255, 0) 100%); /* 양쪽 끝이 투명한 그라디언트 */
+            padding: 20px; /* 내부 여백 */
+            box-sizing: border-box; /* 패딩을 포함한 박스 크기로 계산 */
+            text-align: center; /* 텍스트 중앙 정렬 */
+            opacity: 0; /* 초기 상태: 투명 */
+            animation: fadeIn 0.75s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1; /* 애니메이션 종료 상태: 완전 불투명 */
+            }
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="overlay">
+        <h1>UDTT Studio</h1>
+        <br><br>
+        <h2>저희가 만든 것!</h2>
+        제작 중입니다!
+        <br><br><h2>저희가 만들고 있는 것!</h2>
+        <h3>· 레이저의 다반사 처리</h3>
+        유니티 내부의 레이캐스팅(광선 투사) 기법을 통하여, 레이저의 다반사 처리를 구현하고 있습니다!
+        <br><br><img src="/lasergif.gif" alt="레이저 다반사 처리 움짤">
+        <br><br><h3>· 유니티 게임 내부에서의 글자 인식</h3>
+        <a href="https://depts.washington.edu/acelab/proj/dollar/index.html" target="_blank">$1 Unistroke Recognizer</a>, <a href="https://depts.washington.edu/acelab/proj/dollar/ndollar.html" target="_blank">$N Multistroke Recognizer</a>를 통하여 유니티 내에서 글자 인식을 구현하고 있습니다!
+        <br><br><h2>저희의 목표!</h2>
+        <h3>· 위 기술들을 사용하여 게임 「사계의 섬」 스팀 출시</h3>
+        가격 등의 세부 요소는 아직 결정되지 않았습니다!
+        <br><br><h3>· 레이저의 다반사 처리 및 글자 인식 등의 코드와 프리팹 등을 에셋 스토어에 업로드/판매</h3>
+        가격 등의 세부 요소는 아직 결정되지 않았습니다!
+        <br><br><h3>· 관련 논문 저널 투고</h3>
+        <br><br><br><br><br>
+    </div>
+    <br>
 </body>
-</html>
+<footer>
+    <a href="https://project-sz.github.io/"><p>© 2024 UDTT Studio</p></a>
+</footer>
