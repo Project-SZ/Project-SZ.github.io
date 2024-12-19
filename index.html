@@ -23,6 +23,7 @@
         }
         body {
             font-family: 'Hahmlet-Regular', sans-serif;
+            pointer-events: none;
         }
         h1 {
             font-family: 'Cafe24ClassicType-Regular', sans-serif;
@@ -64,6 +65,8 @@
             text-align: center; /* 텍스트 중앙 정렬 */
             opacity: 0; /* 초기 상태: 투명 */
             animation: fadeIn 0.75s ease-out forwards;
+            z-index: -1;
+            pointer-events: auto;
         }
         @keyframes fadeIn {
             to {
